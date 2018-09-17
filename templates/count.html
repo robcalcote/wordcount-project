@@ -1,0 +1,19 @@
+<!--  -->
+<!-- Upon clicking the 'count the words' button, the site nativates the user to this page -->
+<h1>Results:</h1>
+
+<!-- displays the count of words from the previous textbox -->
+<h3>There are {{ count }} words in your text</h3>
+
+<h4>Your Inputted Text:</h4>
+
+{{ fulltext }}
+
+
+<h1>WordCount:</h1>
+
+<!-- Loop to count the individual words -->
+{% for word, counttotal in sortedwords %}
+    <br />
+    {{ word }} : {{ counttotal }}
+{% endfor %}

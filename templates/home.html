@@ -1,0 +1,24 @@
+<!--  -->
+<!-- This is the Title -->
+<h1>WORDCOUNT</h1>
+
+<!-- Site description -->
+<p>This is the wordcount project to learn the basics of Django</p>
+
+<!-- Form -->
+<form action="{% url 'count' %}">
+    <!-- This is the input box for the user to input text -->
+    <textarea cols="50" rows="10" name="fulltext"></textarea>
+    <br />
+
+    <!-- Button to calculate the word counts -->
+    <input type="submit" value="Count the words!" />
+</form>
+
+<!-- Random Stuff
+<ol>
+    <li>Code?</li>
+    <li>Game?</li>
+    <li>hang with bae?</li>
+</ol>
+-->
