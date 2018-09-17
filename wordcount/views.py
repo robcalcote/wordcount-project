@@ -6,3 +6,6 @@ def homepage(request):
 
 def eggs(request):
     return HttpResponse('<h1>YO WHATSUP</h1>')
+
+def count(request):
+    return render(request, 'count.html')

@@ -20,5 +20,5 @@ from . import views
 
 urlpatterns = [
     path('', views.homepage),
-    path('eggs/', views.eggs)
+    path('count/', views.count, name='count'),
 ]
