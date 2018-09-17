@@ -31,3 +31,6 @@ def count(request):
     #the redirect to the results after you're clicked "count the words!"
     #also creates a new dictionary containing "fulltext", and "count" - gives the amount of words
     return render(request, 'count.html', {'fulltext':fulltext, 'count':len(wordlist), 'sortedwords':sortedwords})
+
+def about(request):
+    return render(request, 'about.html')

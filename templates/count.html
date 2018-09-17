@@ -2,6 +2,10 @@
 <!-- Upon clicking the 'count the words' button, the site nativates the user to this page -->
 <h1>Results:</h1>
 
+<!-- This link will take you back to the homepage on the site -->
+<a href="{% url 'homepage' %}">Start Again</a>
+
+
 <!-- displays the count of words from the previous textbox -->
 <h3>There are {{ count }} words in your text</h3>
 
