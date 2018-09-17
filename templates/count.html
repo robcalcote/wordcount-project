@@ -1,16 +1,19 @@
 <!--  -->
 <!-- Upon clicking the 'count the words' button, the site nativates the user to this page -->
-<h1>Results</h1>
+<h1>Results:</h1>
 
-<!-- Site description -->
-<p>Please see below the result of the wordcount</p>
+<!-- displays the count of words from the previous textbox -->
+<h3>There are {{ count }} words in your text</h3>
 
-<!-- Form -->
-<form action="">
-    <!-- This is the input box for the user to input text -->
-    <textarea cols="50" rows="10" name="fulltext"></textarea>
+<h4>Your Inputted Text:</h4>
+
+{{ fulltext }}
+
+
+<h1>WordCount:</h1>
+
+<!-- Loop to count the individual words -->
+{% for word, counttotal in sortedwords %}
     <br />
-
-    <!-- Button to calculate the word counts -->
-    <input type="submit" value="Count the words!" />
-</form>
+    {{ word }} : {{ counttotal }}
+{% endfor %}
